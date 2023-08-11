@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 # loading the downloaded mail data to the pandas dataframe
-data = pd.read_csv('spam.csv', encoding='latin-1')
+data = pd.read_csv('spam_data.csv', encoding='latin-1')
 
 # Replacing the null values present in data with empty string
 mailData = data.where((pd.notnull(data)), '')
